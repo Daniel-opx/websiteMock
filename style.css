@@ -1,0 +1,79 @@
+h1
+{
+    border: 10px solid
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+}
+.nav
+{
+    display: flex;
+    border: solid 1px;
+    flex:1;
+    align-items: end;
+    
+    background-color: #f0f0f0;
+}
+div>.nav_items{
+    font-size: 1.2rem;
+    padding: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+
+}
+div>.nav_items:hover
+{
+    background-color: aqua;
+}
+div>.nav_items:first-child
+{
+    margin-left: 0;
+}
+div>.nav_items:last-child
+{
+    margin-right: 0;
+}
+.active
+{
+    background-color: rgb(43, 93, 93);
+}
+.drop_menu > .drop_menu_items
+{
+    font-size: 0.8em;
+    display: block;
+}
+.drop_menu
+{
+    display: none;
+    position: absolute;
+    padding: 5px;
+    top:35px;
+    left: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: #f0f0f0;
+
+    &:hover {
+        display: block;
+    }
+}
+.nav_items:hover
+{
+    & .drop_menu
+    {
+        display: block;
+    }
+}
+.drop_menu_items:hover
+{
+    background: #b4b4b4;
+}
+
+
+
+
+
+
