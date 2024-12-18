@@ -71,6 +71,20 @@ div>.nav_items:last-child
 {
     background: #b4b4b4;
 }
+.grid_container
+{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+.grid_element
+{
+    border: #1b9cc4 solid 3px;
+    border-radius: 30px;
+    background: #4db18b;
+
+}
 
 
 
